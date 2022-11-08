@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	position: fixed; // Tiene que estar esta función (position:fixed) para usar z-index
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	transition: 0.7s;
+	padding: 30px 20px;
+	z-index: 10; //Es para elegir la posición de los elemeno (delante o  detras podemos uner z-index:1;(Por defecto),z-index:2;, normalmente usamos para arriba z-index:10; )
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header.menu-abajo {
+	background: rgba(0, 0, 0, 0.823);
+	padding: 15px 20px;
+}
+
+header.menu-abajo .logo,header.menu-abajo ul li a {
+	color: white;
+}

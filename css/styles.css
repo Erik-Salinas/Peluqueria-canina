@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.menu ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 3.5s;
+  font-family: "IM Fell Great Primer SC", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  transition: 3.5s;
+  text-decoration: none;
+  font-family: "IM Fell Great Primer SC", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.menu-abajo {
+  background: rgba(0, 0, 0, 0.823);
+  padding: 15px 20px;
+}
+
+header.menu-abajo .logo, header.menu-abajo ul li a {
+  color: white;
+}
+
+.portada img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

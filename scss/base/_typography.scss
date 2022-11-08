@@ -1,0 +1,23 @@
+//MENU
+.menu ul li a{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	transition: 3.5s;
+    font-family: 'IM Fell Great Primer SC', serif;
+	font-weight: 600;
+    letter-spacing: 2px; //Separacion de letras
+}
+
+.logo {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-size: 1.5rem;
+	transition: 3.5s;
+	text-decoration: none;
+    font-family: 'IM Fell Great Primer SC', serif;
+	font-weight: 600;
+    letter-spacing: 2px;
+}
