@@ -22,18 +22,32 @@ header {
 	align-items: center;
 }
 
-.menu ul {
+.menu ul  {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	& a{
+		text-decoration: none;
+	}
+	& .icon{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		color: black;
+		font-size: 30px;
+		transition: 3.5s;
+		text-decoration: none;
+	}
 }
 
-header.menu-abajo {
+
+.menu-abajo {
 	background: rgba(0, 0, 0, 0.823);
 	padding: 15px 20px;
 }
 
-header.menu-abajo .logo,header.menu-abajo ul li a {
+header.menu-abajo .logo, header.menu-abajo ul li a, header.menu-abajo ul .icon {
 	color: white;
 }
