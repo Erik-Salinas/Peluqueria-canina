@@ -1,6 +1,6 @@
 //PORTADA
 .portada {
-	background-image: url(../../images/fondo-pantalla.jpg);
+	background-image: url(../../images/fondo-pantalla-2.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -58,12 +58,10 @@ a .fa-whatsapp {
 
 .publicidad:nth-child(1) {
 	background-image: url(../../images/baño-golden.jpg);
-
 }
 
 .publicidad:nth-child(2) {
 	background-image: url(../../images/corte-de-lagrimales.jpg);
-
 }
 
 .publicidad:nth-child(3) {
@@ -74,7 +72,6 @@ a .fa-whatsapp {
 
 .publicidad:nth-child(4) {
 	background-image: url(../../images/corte-de-uñas-maltes.jpg);
-
 }
 
 .publicidad:nth-child(5) {
@@ -84,26 +81,22 @@ a .fa-whatsapp {
 .publicidad:nth-child(6) {
 	background-image: url(../../images/panoramica-peluqueria.jpg);
 	grid-column: 2/4;
-
 }
 
 .publicidad:nth-child(7) {
 	background-image: url(../../images/secado-de-pup.jpg);
 	grid-row: 3/5;
-
 }
 
 .publicidad:nth-child(8) {
 	background-image: url(../../images/secado-perro-comun.jpg);
-
 }
 
 .publicidad:nth-child(9) {
 	background-image: url(../../images/peinado-gato.jpg);
-
 }
 
-//COLOR BIEN CON SASS
+//COLOCAR BIEN CON SASS
 // @media screen and (max-width: 750px) {
 // 	.galeria__publicidad {
 // 		display: flex;
@@ -115,3 +108,72 @@ a .fa-whatsapp {
 // 		height: 200px;
 // 	}
 // }
+
+//PELUQUERO
+
+.imagen__perfil {
+	margin-left: 220px;
+	margin-top: 70px;
+}
+
+.perfil__peluquero {
+	float: left;
+	margin-right: 80px;
+	margin-top: -60px;
+
+	& img {
+		width: 300px;
+	}
+}
+
+.perfil__info {
+	margin-bottom: 300px;
+}
+
+//CONTACTO
+
+.container {
+	width: 100%;
+}
+
+.formulario {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.formulario__contacto {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+
+	& .input-box {
+		margin-bottom: 10px;
+		width: calc(100% / 2 - 100px); //AVERIGUAR QUE HACE calc
+	}
+
+	& .input-box input {
+		height: 45px;
+		width: 100%;
+		border: black 1px solid;
+		outline: none;
+		/*Anula el borde  que aprece al selecionar una caja*/
+		font-size: 1.2rem;
+		border-radius: 5px;
+		border: 1px solid black;
+		padding-left: 20px;
+	}
+}
+
+.consulta textarea {
+	width: 100%;
+	height: 300px;
+	resize: none;
+	border-radius: 5px;
+	border: 1px solid black;
+	outline: none;
+	margin-top: 20px;
+	font-size: 1.2rem;
+	padding: 10px 20px;
+}
