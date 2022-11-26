@@ -126,18 +126,24 @@
 	figcaption{
 		color: black;
 		font-size: 1rem;
+		font-family: 'IM Fell Great Primer SC', serif;
+		font-weight: 400px;
 	}
 
 	.perfil__info p {
 		color: black;
 		font-size: 1.2rem;
 		margin-top: 40px;
+		font-family: 'Archivo', sans-serif;
+		font-weight: 400;
 	} 
 
 	.perfil__info a{
 		color: black;
 		font-size: 1.2rem;
 		text-decoration: none;
+		font-family: 'Archivo', sans-serif;
+		font-weight: 400;
 	}
 
 	.perfil__info span{
@@ -145,6 +151,8 @@
 		font-size: 1.2rem;
 		font-weight: 600;
 		text-decoration: none;
+		font-family: 'Archivo', sans-serif;
+		font-weight: 400;
 	}
 }  
 
@@ -165,17 +173,20 @@
 	text-align: center;
 	color: black;
 	font-size: 1.2rem;
+	font-family: 'Archivo', sans-serif;
+	font-weight: 400;
 }
 .input-box .datos {
 	display: bock;
 	font-weight: 500;
 	color: black;
 	margin-bottom: 5px;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	background-color: white;
 	position: relative;
 	top: 12px;
 	left: 12px;
+	font-family: 'IM Fell Great Primer SC', serif;
 }
 
 .consulta .datos-dos{
@@ -183,7 +194,37 @@
 	font-size: 1.2rem;
 	background-color: white;
 	position: relative;
-	top: 35px;
+	top: 32px;
 	left: 12px;
+	font-family: 'IM Fell Great Primer SC', serif;
 }
+
+//PIE DE PAGINA
+
+.pie__pagina{
+	font-family: 'Archivo', sans-serif;
+	font-weight: 400;
+	& h4{
+		color: white;
+	font-size: 1.6rem;
+	letter-spacing: 2px;
+	text-align: center;
+	}
+
+	& a{
+		color: white;
+		font-size: 1.2rem;
+		text-decoration: none;
+	}
+}
+.politica__derechos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: white;
+	font-size: 0.8rem;
+	font-family: 'Archivo', sans-serif;
+	font-weight: 200;
+}
+
 
