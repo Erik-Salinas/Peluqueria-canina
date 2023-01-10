@@ -40,6 +40,7 @@
   color: black;
   font-size: 3rem;
   text-align: center;
+  padding: 40px;
   font-family: "IM Fell Great Primer SC", serif;
   font-weight: 600;
   letter-spacing: 2px;
@@ -49,11 +50,10 @@
   background-color: rgba(0, 0, 0, 0.852);
   font-size: 1.5rem;
   text-decoration: none;
+  margin-left: 43%;
   font-family: "IM Fell Great Primer SC", serif;
   font-weight: 600;
   letter-spacing: 2px;
-  display: inline-block;
-  margin: 0px 40%;
 }
 .portada a:hover {
   color: black;
@@ -94,9 +94,6 @@
   font-size: 1.4rem;
   font-family: "IM Fell Great Primer SC", serif;
   letter-spacing: 2px;
-}
-.turnos a:hover {
-  background-color: #18db25;
 }
 
 .galeria h2 {
@@ -241,53 +238,6 @@
   }
 }
 
-@media screen and (max-width: 1076px) {
-  .portada h1 {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 865px) {
-  .portada h1 {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .portada h1 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .servicios h2 {
-    font-size: 1rem;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .turnos a {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .galeria h2 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .peluquero h2 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contacto h2 {
-    font-size: 1rem;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -414,26 +364,14 @@ header.menu-abajo label .fa-bars {
   }
 }
 
-@media screen and (max-width: 865px) {
-  .menu a .icon {
-    color: aliceblue;
-  }
-}
-
 .btn__envio button {
   background-color: black;
   color: white;
   border: black 2px solid;
-  font-size: 1.2rem;
+  font-size: 20px;
   padding: 5px;
   float: right;
   font-family: "IM Fell Great Primer SC", serif;
-}
-
-@media screen and (max-width: 480px) {
-  .btn__envio button {
-    font-size: 1rem;
-  }
 }
 
 .portada {
@@ -465,6 +403,10 @@ header.menu-abajo label .fa-bars {
 
 a .fa-whatsapp {
   font-size: 28px;
+}
+
+.turnos a:hover {
+  background-color: #18db25;
 }
 
 .galeria__publicidad {
@@ -523,17 +465,6 @@ a .fa-whatsapp {
   background-image: url(../../images/peinado-gato.jpg);
 }
 
-/*  @media screen and (max-width: 750px) {
- 	.galeria__publicidad {
- 		display: flex;
- 		flex-wrap: wrap;
- 	}
-
- 	.publicidad {
- 		width: 200px;
- 		height: 200px;
- 	}
- } */
 .imagen__perfil {
   margin-left: 220px;
   margin-top: 70px;
@@ -656,18 +587,4 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .galeria__publicidad {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .publicidad {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=stules.css.map */

@@ -21,6 +21,10 @@
 	font-family: 'IM Fell Great Primer SC', serif;
 	font-weight: 600;
 	letter-spacing: 2px;
+
+	&:hover{
+		color: black;
+	}
 }
 
 //PORTADA
@@ -33,7 +37,6 @@
 		color: black;
 		font-size: 3rem;
 		text-align: center;
-		padding: 40px;
 		font-family: 'IM Fell Great Primer SC', serif;
 		font-weight: 600;
 		letter-spacing: 2px;
@@ -44,10 +47,11 @@
 		background-color:rgba(0, 0, 0, 0.852);
 		font-size: 1.5rem;
 		text-decoration: none;
-		margin-left: 43%;
 		font-family: 'IM Fell Great Primer SC', serif;
 		font-weight: 600;
 		letter-spacing: 2px;
+		display: inline-block;
+		margin: 0px 40%;
 	}
 	& a:hover{
 		color: black;
@@ -92,7 +96,12 @@
 		font-family: 'IM Fell Great Primer SC', serif;
 		letter-spacing: 2px;
 	}
+	& a:hover{
+		background-color: #18db25;
+	}
 }
+
+
 
 //GALERIA
 .galeria h2 {
@@ -228,3 +237,67 @@
 }
 
 
+//RESPONSIVE
+.logo{
+	@include tablet{
+		font-size: 1rem;
+		margin-left: -60px;
+	}
+}
+.menu ul li a {
+	@include tablet{
+		font-size: 1rem;
+		
+	}
+	@include tabletMin{
+		color: white;
+		font-size: 1rem;
+	}
+}
+//!REVISAR titulo y boton de conocernos
+.portada h1{
+	@include tablet{
+		font-size: 2rem;
+	}
+	@include tabletMin{
+		font-size: 1.5rem;
+	}
+
+	@include celular{
+		font-size: 1rem;
+		
+		
+	}
+}
+
+.servicios h2{
+	@include celular{
+		font-size: 1rem;
+		width:300px;
+	}
+}
+
+.turnos a{
+	@include celular{
+		font-size: 1rem;
+	}
+}
+
+.galeria h2{
+	@include celular{
+		font-size: 1rem;
+		
+	}
+}
+.peluquero h2{
+	@include celular{
+		font-size: 1rem;
+		
+	}
+}
+
+.contacto h2 {
+	@include celular{
+		font-size: 1rem;
+	}
+}

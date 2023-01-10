@@ -10,8 +10,12 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<!-- TIPOGRAFIA -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=IM+Fell+Great+Primer+SC&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=IM+Fell+Great+Primer+SC&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 	<!-- CDN ICON BOOTSTRAP -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 	<!-- CSS BOOTSTRAP -->
@@ -36,6 +40,10 @@
 	<header>
 		<a href="index.html" class="logo ps-5">Salinas <br />Peluqueria canina</a>
 		<nav class="menu">
+			<input type="checkbox" id="check">
+			<label for="check" class="chekbtn">
+				<i class="fa-solid fa-bars"></i>
+			</label>
 			<ul>
 				<li><a href="#inicio">Inicio</a></li>
 				<li><a href="#servicios">Servicios</a></li>
@@ -52,13 +60,14 @@
 	<main>
 		<section id="inicio">
 			<div class="portada">
-				<div class="portada__sub">
+				<!-- !REVISAR -->
+				<!-- <div class="portada__sub">
 					<h1>
 						TODO LO QUE <br />
 						NECESITA TU MASCOTA
 					</h1>
 					<a href="#peluquero" class="p-2">CONOCENOS</a>
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<section id="servicios">
@@ -135,12 +144,12 @@
 				<div class="publicidad"></div>
 			</div>
 		</section>
-		<section id="peluquero">
+	<!-- 	<section id="peluquero">
 			<div class="peluquero">
 				<h2 class="p-2 mt-5 mb-5">PELUQUERO</h2>
 			</div>
-		</section>
-		<section>
+		</section> -->
+		<!-- <section>
 			<div class="imagen__perfil">
 				<div>
 					<figure class="perfil__peluquero">
@@ -161,8 +170,8 @@
 						<span>RECOLETA</span></a>
 				</div>
 			</div>
-		</section>
-		<section id="contacto">
+		</section> -->
+	<!-- 	<section id="contacto">
 			<div class="contacto">
 				<h2 class="p-2 mt-5 mb-5">CONTACTO</h2>
 			</div>
@@ -174,8 +183,8 @@
 					Sus comentarios y sugerencias son muy importantes para nosotros.
 				</p>
 			</div>
-		</section>
-		<section class="container">
+		</section> -->
+		<!-- <section class="container">
 			<div class="formulario">
 				<form action="#" method="post" name="contact" netlify enctype="multipart/form-data">
 					<div class="formulario__contacto">
@@ -193,24 +202,22 @@
 						</div>
 						<div class="input-box">
 							<span class="datos" for="correo">Email</span>
-							<input type="email" id="correo" name="txtCorreo" placeholder="peluqueria-208@gmail.com" required />
+							<input type="email" id="correo" name="correo" placeholder="peluqueria-208@gmail.com"
+								required />
 						</div>
-					</div>
-					<div>
-						<input type="file" id="archivo" name="archivo" accept=".png, .jpg, .jpeg, gif." multiple >
 					</div>
 					<div class="consulta">
 						<span class="datos-dos" for="consulta">Consulta</span>
 						<textarea name="consulta" id="consulta" placeholder="Escribe aqui"></textarea>
 					</div>
 					<div class="btn__envio">
-						<button type="submit" id="btnEnviar" name="btnEnviar" class="mt-3 mb-5">ENVIAR</button>
+						<button type="submit" id="btnEnviar" name="btnEnviar"  value="enviar" class="mt-3 mb-5">ENVIAR</button>
 					</div>
 				</form>
 			</div>
-		</section>
+		</section> -->
 	</main>
-	<footer>
+	<!-- <footer>
 		<section>
 			<div class="pie__pagina pt-5">
 				<div>
@@ -241,14 +248,15 @@
 				<p> &copy; 2018-2022 <b>Salinas peluquería canina.</b> Todos los derechos reservados.</p>
 			</div>
 		</section>
-	</footer>
+	</footer> -->
 	<script type="text/javascript">
 		window.addEventListener("scroll", function () {
-			var header = document.querySelector("header");
+			let header = document.querySelector("header");
 			header.classList.toggle("menu-abajo", window.scrollY > 0);
 		});
 	</script>
 	<!-- JS BOOTSTRAP -->
 	<script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

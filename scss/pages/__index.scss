@@ -2,12 +2,12 @@
 .portada {
 	background-image: url(../../images/fondo-pantalla-2.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
+	background-position: center;
 	width: 100%;
-	height: 100vh;
+	height: auto;
 }
+
 
 //SERVICIOS
 .servicios__opcion {
@@ -32,10 +32,6 @@
 
 a .fa-whatsapp {
 	font-size: 28px;
-}
-
-.turnos a:hover {
-	background-color: #18db25;
 }
 
 //GALERIA
@@ -97,17 +93,18 @@ a .fa-whatsapp {
 }
 
 //COLOCAR BIEN CON SASS
-// @media screen and (max-width: 750px) {
-// 	.galeria__publicidad {
-// 		display: flex;
-// 		flex-wrap: wrap;
-// 	}
+/*  @media screen and (max-width: 750px) {
+ 	.galeria__publicidad {
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 	}
 
-// 	.publicidad {
-// 		width: 200px;
-// 		height: 200px;
-// 	}
-// }
+ 	.publicidad {
+ 		width: 200px;
+ 		height: 200px;
+ 	}
+ } */
+
 
 //PELUQUERO
 
@@ -178,6 +175,17 @@ a .fa-whatsapp {
 	padding: 10px 20px;
 }
 
+.foto__mascota span {
+	color: black;
+	font-size: 1.2rem;
+	font-family: 'IM Fell Great Primer SC', serif;
+}
+
+.foto__mascota input {
+	display: block;
+	margin: auto;
+}
+
 //PIE DE PAGINA
 
 footer {
@@ -209,6 +217,39 @@ footer {
 .pie__pagina .icon:nth-child(5) {
 	grid-row-start: 2;
 	grid-column-start: 3;
-	
+
 }
 
+//RESPONSIVE
+
+.portada {
+	@include tablet {
+		background-size: 100% 100%;
+		height: 70vh;
+	}
+
+	@include tabletMin {
+		background-size: 100% 100%;
+		height: 30vh;
+	}
+
+	@include celular {
+		background-size: 100% 100%;
+		height: 20vh;
+	}
+}
+
+.galeria__publicidad {
+	@include celular {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.publicidad {
+	@include celular {
+		width: 200px;
+		height: 200px;
+	}
+
+}
