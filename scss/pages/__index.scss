@@ -92,24 +92,10 @@ a .fa-whatsapp {
 	background-image: url(../../images/peinado-gato.jpg);
 }
 
-//COLOCAR BIEN CON SASS
-/*  @media screen and (max-width: 750px) {
- 	.galeria__publicidad {
- 		display: flex;
- 		flex-wrap: wrap;
- 	}
-
- 	.publicidad {
- 		width: 200px;
- 		height: 200px;
- 	}
- } */
-
-
 //PELUQUERO
 
 .imagen__perfil {
-	margin-left: 220px;
+	margin-left: 20%;
 	margin-top: 70px;
 }
 
@@ -119,14 +105,13 @@ a .fa-whatsapp {
 	margin-top: -60px;
 
 	& img {
-		width: 300px;
+		max-width: 300px;
 	}
 }
 
 .perfil__info {
 	margin-bottom: 300px;
 }
-
 //CONTACTO
 
 .container {
@@ -240,16 +225,52 @@ footer {
 }
 
 .galeria__publicidad {
-	@include celular {
+	@include tabletMin {
 		display: flex;
 		flex-wrap: wrap;
 	}
 }
 
 .publicidad {
-	@include celular {
+	@include tabletMin {
 		width: 200px;
 		height: 200px;
 	}
 
+}
+
+.perfil__peluquero {
+	@include tablet{
+		margin-right: 50px;
+	}
+
+	@include celular{
+		margin: auto;
+	}
+}
+
+.perfil__peluquero img{
+	@include celular{
+		max-width: 80%;
+	}
+}
+
+
+.formulario__contacto .input-box {
+	@include tabletMin{
+		width: calc(100% / 2 - 30px); //AVERIGUAR QUE HACE calc
+	}
+	@include celular{
+		width: calc(100% / 1 - 0px); //AVERIGUAR QUE HACE calc
+	}
+}
+.formulario__contacto .input-box input {
+	@include tablet{
+		font-size: 1rem;
+	}
+}
+.consulta textarea {
+	@include tablet{
+		font-size: 1rem;
+	}
 }

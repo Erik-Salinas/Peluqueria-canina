@@ -255,7 +255,7 @@
 	}
 }
 //!REVISAR titulo y boton de conocernos
-.portada h1{
+/* .portada h1{
 	@include tablet{
 		font-size: 2rem;
 	}
@@ -268,36 +268,49 @@
 		
 		
 	}
-}
+} */
 
 .servicios h2{
-	@include celular{
+	@include tabletMin{
 		font-size: 1rem;
 		width:300px;
 	}
 }
 
 .turnos a{
-	@include celular{
+	@include tabletMin{
 		font-size: 1rem;
 	}
 }
 
 .galeria h2{
-	@include celular{
+	@include tabletMin{
 		font-size: 1rem;
 		
 	}
 }
 .peluquero h2{
-	@include celular{
+	@include tabletMin{
 		font-size: 1rem;
 		
 	}
 }
 
 .contacto h2 {
-	@include celular{
+	@include tabletMin{
 		font-size: 1rem;
+	}
+}
+
+.imagen__perfil .perfil__info p{
+	@include celular{
+		text-align: center;
+		padding-right: 50px;
+	}
+}
+
+.imagen__perfil figcaption{
+	@include celular{
+		margin-bottom: 20px;
 	}
 }

@@ -241,50 +241,61 @@
   }
 }
 
-@media screen and (max-width: 1076px) {
-  .portada h1 {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 865px) {
-  .portada h1 {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .portada h1 {
-    font-size: 1rem;
-  }
-}
+/* .portada h1{
+	@include tablet{
+		font-size: 2rem;
+	}
+	@include tabletMin{
+		font-size: 1.5rem;
+	}
 
-@media screen and (max-width: 480px) {
+	@include celular{
+		font-size: 1rem;
+
+
+	}
+} */
+@media screen and (max-width: 865px) {
   .servicios h2 {
     font-size: 1rem;
     width: 300px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 865px) {
   .turnos a {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 865px) {
   .galeria h2 {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 865px) {
   .peluquero h2 {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 865px) {
   .contacto h2 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagen__perfil .perfil__info p {
+    text-align: center;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagen__perfil figcaption {
+    margin-bottom: 20px;
   }
 }
 
@@ -523,19 +534,8 @@ a .fa-whatsapp {
   background-image: url(../../images/peinado-gato.jpg);
 }
 
-/*  @media screen and (max-width: 750px) {
- 	.galeria__publicidad {
- 		display: flex;
- 		flex-wrap: wrap;
- 	}
-
- 	.publicidad {
- 		width: 200px;
- 		height: 200px;
- 	}
- } */
 .imagen__perfil {
-  margin-left: 220px;
+  margin-left: 20%;
   margin-top: 70px;
 }
 
@@ -545,7 +545,7 @@ a .fa-whatsapp {
   margin-top: -60px;
 }
 .perfil__peluquero img {
-  width: 300px;
+  max-width: 300px;
 }
 
 .perfil__info {
@@ -656,17 +656,57 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 865px) {
   .galeria__publicidad {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 865px) {
   .publicidad {
     width: 200px;
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .perfil__peluquero {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .perfil__peluquero {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .perfil__peluquero img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .formulario__contacto .input-box {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .formulario__contacto .input-box {
+    width: calc(100% - 0px);
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .formulario__contacto .input-box input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .consulta textarea {
+    font-size: 1rem;
   }
 }
 
