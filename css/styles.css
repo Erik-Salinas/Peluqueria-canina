@@ -43,6 +43,8 @@
   font-family: "IM Fell Great Primer SC", serif;
   font-weight: 600;
   letter-spacing: 2px;
+  position: relative;
+  bottom: 200px;
 }
 .portada a {
   color: white;
@@ -52,8 +54,8 @@
   font-family: "IM Fell Great Primer SC", serif;
   font-weight: 600;
   letter-spacing: 2px;
-  display: inline-block;
-  margin: 0px 40%;
+  display: block;
+  margin: auto;
 }
 .portada a:hover {
   color: black;
@@ -241,20 +243,24 @@
   }
 }
 
-/* .portada h1{
-	@include tablet{
-		font-size: 2rem;
-	}
-	@include tabletMin{
-		font-size: 1.5rem;
-	}
+@media screen and (max-width: 1076px) {
+  .portada h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 865px) {
+  .portada h1 {
+    font-size: 1.5rem;
+    bottom: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portada h1 {
+    font-size: 0.5rem;
+    display: none;
+  }
+}
 
-	@include celular{
-		font-size: 1rem;
-
-
-	}
-} */
 @media screen and (max-width: 865px) {
   .servicios h2 {
     font-size: 1rem;
@@ -296,6 +302,23 @@
 @media screen and (max-width: 480px) {
   .imagen__perfil figcaption {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .pie__pagina h4, .pie__pagina a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pie__pagina h4, .pie__pagina a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .politica__derechos {
+    font-size: 0.7rem;
   }
 }
 
@@ -431,6 +454,101 @@ header.menu-abajo label .fa-bars {
   }
 }
 
+footer {
+  background-color: black;
+}
+
+.pie__pagina {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 70px);
+  align-items: center;
+  justify-content: space-evenly;
+  grid-auto-flow: dense;
+}
+
+.pie__pagina i {
+  font-size: 30px;
+  margin: 7px;
+  position: relative;
+  top: 5px;
+}
+
+.pie__pagina .icon:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.pie__pagina .icon:nth-child(5) {
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+
+@media screen and (max-width: 1076px) {
+  .pie__pagina {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 13px;
+  }
+}
+@media screen and (max-width: 865px) {
+  .pie__pagina {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pie__pagina {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pie__pagina {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(4) {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(5) {
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+}
+
 .btn__envio button {
   background-color: black;
   color: white;
@@ -472,10 +590,6 @@ header.menu-abajo label .fa-bars {
 .turnos a {
   padding: 15px;
   border-radius: 10px;
-}
-
-a .fa-whatsapp {
-  font-size: 28px;
 }
 
 .galeria__publicidad {
@@ -605,36 +719,6 @@ a .fa-whatsapp {
 .foto__mascota input {
   display: block;
   margin: auto;
-}
-
-footer {
-  background-color: black;
-}
-
-.pie__pagina {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 70px);
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.pie__pagina i {
-  font-size: 30px;
-  margin: 7px;
-  position: relative;
-  top: 5px;
-}
-
-.pie__pagina .icon:nth-child(4) {
-  grid-row-start: 2;
-  grid-column-start: 2;
-}
-
-.pie__pagina .icon:nth-child(5) {
-  grid-row-start: 2;
-  grid-column-start: 3;
 }
 
 @media screen and (max-width: 1076px) {

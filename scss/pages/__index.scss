@@ -30,10 +30,6 @@
 	}
 }
 
-a .fa-whatsapp {
-	font-size: 28px;
-}
-
 //GALERIA
 //Padre
 .galeria__publicidad {
@@ -171,39 +167,7 @@ a .fa-whatsapp {
 	margin: auto;
 }
 
-//PIE DE PAGINA
 
-footer {
-	background-color: black;
-}
-
-.pie__pagina {
-	display: grid;
-	grid-auto-flow: row;
-	grid-template-columns: repeat(3, 300px);
-	grid-template-rows: repeat(3, 70px);
-	align-items: center;
-	justify-content: space-evenly;
-
-}
-
-.pie__pagina i {
-	font-size: 30px;
-	margin: 7px;
-	position: relative;
-	top: 5px;
-}
-
-.pie__pagina .icon:nth-child(4) {
-	grid-row-start: 2;
-	grid-column-start: 2;
-}
-
-.pie__pagina .icon:nth-child(5) {
-	grid-row-start: 2;
-	grid-column-start: 3;
-
-}
 
 //RESPONSIVE
 

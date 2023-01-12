@@ -40,6 +40,8 @@
 		font-family: 'IM Fell Great Primer SC', serif;
 		font-weight: 600;
 		letter-spacing: 2px;
+		position: relative;
+		bottom: 200px;
 	}
 
 	& a {
@@ -50,8 +52,9 @@
 		font-family: 'IM Fell Great Primer SC', serif;
 		font-weight: 600;
 		letter-spacing: 2px;
-		display: inline-block;
-		margin: 0px 40%;
+		//!ARREGLAR BOTON
+		display: block;
+		margin: auto;
 	}
 	& a:hover{
 		color: black;
@@ -254,21 +257,21 @@
 		font-size: 1rem;
 	}
 }
-//!REVISAR titulo y boton de conocernos
-/* .portada h1{
+
+  .portada h1{
 	@include tablet{
 		font-size: 2rem;
 	}
 	@include tabletMin{
 		font-size: 1.5rem;
+		bottom: 300px;
 	}
-
+	//!REVISAR titulo y boton de conocernos
 	@include celular{
-		font-size: 1rem;
-		
-		
+		font-size: 0.5rem;
+		display: none;
 	}
-} */
+}  
 
 .servicios h2{
 	@include tabletMin{
@@ -312,5 +315,21 @@
 .imagen__perfil figcaption{
 	@include celular{
 		margin-bottom: 20px;
+	}
+}
+
+.pie__pagina h4, .pie__pagina a {
+	@include tabletMin{
+		font-size: 1rem;
+	}
+
+	@include celular{
+		font-size: 0.8rem;
+	}
+}
+
+.politica__derechos {
+	@include celular{
+		font-size: 0.7rem;
 	}
 }
