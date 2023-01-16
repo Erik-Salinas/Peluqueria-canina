@@ -29,14 +29,13 @@
 
 //PORTADA
 .portada {
-
+	text-align: center;
 	& .portada__sub{
 		padding: 190px;
 	}
 	& h1 {
 		color: black;
 		font-size: 3rem;
-		text-align: center;
 		font-family: 'IM Fell Great Primer SC', serif;
 		font-weight: 600;
 		letter-spacing: 2px;
@@ -45,16 +44,15 @@
 	}
 
 	& a {
-		color: white;
+		 color: white;
 		background-color:rgba(0, 0, 0, 0.852);
 		font-size: 1.5rem;
 		text-decoration: none;
 		font-family: 'IM Fell Great Primer SC', serif;
 		font-weight: 600;
-		letter-spacing: 2px;
-		//!ARREGLAR BOTON
-		display: block;
-		margin: auto;
+		letter-spacing: 2px; 
+		position: relative;
+		bottom: 150px;
 	}
 	& a:hover{
 		color: black;
@@ -176,7 +174,7 @@
 	font-size: 2rem;
 	width:250px;
 	display: block;
-	margin: auto;
+	margin: auto ;
 	font-family: 'IM Fell Great Primer SC', serif;
 	letter-spacing: 2px;
 }
@@ -264,14 +262,24 @@
 	}
 	@include tabletMin{
 		font-size: 1.5rem;
-		bottom: 300px;
+		top: -300px;
 	}
-	//!REVISAR titulo y boton de conocernos
 	@include celular{
-		font-size: 0.5rem;
+		font-size: 1rem;
 		display: none;
 	}
-}  
+	
+	
+} 
+.portada a{
+	@include tabletMin{
+		font-size: 1.2rem;
+		top: -270px;
+	}
+	@include celular{
+		display: none;
+	}
+} 
 
 .servicios h2{
 	@include tabletMin{
@@ -317,7 +325,6 @@
 		margin-bottom: 20px;
 	}
 }
-
 .pie__pagina h4, .pie__pagina a {
 	@include tabletMin{
 		font-size: 1rem;

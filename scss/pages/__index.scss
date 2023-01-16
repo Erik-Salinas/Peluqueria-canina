@@ -188,6 +188,12 @@
 	}
 }
 
+.portada__sub{
+	@include celularDos{
+		display: none;
+	}
+}
+
 .galeria__publicidad {
 	@include tabletMin {
 		display: flex;

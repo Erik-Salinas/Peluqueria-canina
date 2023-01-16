@@ -135,5 +135,6 @@ header #check:checked~ul {
 .menu a .icon{
     @include tabletMin{
       color: aliceblue;
+      margin: 20px;
     }
 }
