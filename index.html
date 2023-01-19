@@ -209,32 +209,37 @@
 		</section>
 		<section class="container">
 			<div class="formulario">
-				<form action="#" method="post"name="peluqueria-canina" netlfy>
-					<div class="formulario__contacto">
-						<div class="input-box">
-							<span class="datos">Nombre y Apellido</span>
-							<input type="text" required />
-						</div>
-						<div class="input-box">
-							<span class="datos">Dirección</span>
-							<input type="text" required />
-						</div>
-						<div class="input-box">
-							<span class="datos">Telefono</span>
-							<input type="text" placeholder="1160838693" required />
-						</div>
-						<div class="input-box">
-							<span class="datos">Email</span>
-							<input type="text" placeholder="peluqueria-208@gmail.com" required />
-						</div>
+				<form action="https://formsubmit.co/erik61869@gmail.com" method="POST">
+				<div class="formulario__contacto">
+					<div class="input-box">
+						<span class="datos" for="nombreApellido">Nombre y Apellido</span>
+						<input type="text" id="nombreApellido" name="nombreApellido" required />
 					</div>
-					<div class="consulta">
-						<span class="datos-dos">Consulta</span>
-						<textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe aqui"></textarea>
+					<div class="input-box">
+						<span class="datos" for="dirrecion">Dirección</span>
+						<input type="text" id="dirrecion" name="dirrecion" required />
 					</div>
-					<div class="btn__envio">
-						<button type="submit" class="mt-3 mb-5">ENVIAR</button>
+					<div class="input-box">
+						<span class="datos" for="telefono">Telefono</span>
+						<input type="tel" id="telefono" name="telefono" placeholder="1160838693" required />
 					</div>
+					<div class="input-box">
+						<span class="datos" for="correo">Email</span>
+						<input type="email" id="correo" name="correo" placeholder="peluqueria-208@gmail.com" required />
+					</div>
+				</div>
+				<div class="consulta">
+					<span class="datos-dos" for="consulta">Consulta</span>
+					<textarea name="consulta" id="consulta" placeholder="Escribe aqui"></textarea>
+				</div>
+				<div> <!-- todo: Nos permite volver a la pagina web -->
+					<input type="hidden" name="_next" value="https://peluqueria-canina-erik.netlify.app/">
+					<input type="hidden" name="_captcha" value="false">
+				</div>
+				<div class="btn__envio">
+					<button type="submit" id="btnEnviar" name="btnEnviar" value="enviar"
+						class="mt-3 mb-5"> ENVIAR</button>
+				</div>
 				</form>
 			</div>
 		</section>
