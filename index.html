@@ -209,7 +209,6 @@
 		</section>
 		<section class="container">
 			<div class="formulario">
-				<!-- <form action="#" method="post" name="contact" netlify enctype="multipart/form-data"> -->
 				<form action="https://formsubmit.co/erik61869@gmail.com" method="POST">
 				<div class="formulario__contacto">
 					<div class="input-box">
@@ -228,18 +227,18 @@
 						<span class="datos" for="correo">Email</span>
 						<input type="email" id="correo" name="correo" placeholder="peluqueria-208@gmail.com" required />
 					</div>
-					<div>
-						<input type="hidden" name="_next" value="https://peluqueria-canina-erik.netlify.app/">
-						<input type="hidden" name="_captcha" value="false">
-					</div>
 				</div>
 				<div class="consulta">
 					<span class="datos-dos" for="consulta">Consulta</span>
 					<textarea name="consulta" id="consulta" placeholder="Escribe aqui"></textarea>
 				</div>
+				<div> <!-- todo: Nos permite volver a la pagina web -->
+					<input type="hidden" name="_next" value="https://peluqueria-canina-erik.netlify.app/">
+					<input type="hidden" name="_captcha" value="false">
+				</div>
 				<div class="btn__envio">
 					<button type="submit" id="btnEnviar" name="btnEnviar" value="enviar"
-						class="mt-3 mb-5">ENVIAR</button>
+						class="mt-3 mb-5"><a href="pages/contacto.html">ENVIAR</a></button>
 				</div>
 				</form>
 			</div>
