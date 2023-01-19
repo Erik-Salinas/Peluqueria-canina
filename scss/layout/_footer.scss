@@ -1,5 +1,4 @@
-//PIE DE PAGINA
-
+//*PIE DE PAGINA
 footer {
 	background-color: black;
 }
@@ -21,7 +20,7 @@ footer {
 	top: 5px;
 }
 
- .pie__pagina .icon:nth-child(4) {
+.pie__pagina .icon:nth-child(4) {
 	grid-row-start: 2;
 	grid-column-start: 2;
 }
@@ -30,30 +29,32 @@ footer {
 	grid-row-start: 2;
 	grid-column-start: 3;
 
-} 
+}
 
-//RESPONSIVE
-
+//!RESPONSIVE
 .pie__pagina {
 	@include tablet {
 		width: 100%;
 		grid-template-columns: repeat(1, 1fr);
-		padding:13px;
+		padding: 13px;
 	}
-	@include tabletMin{
+
+	@include tabletMin {
 		width: 90%;
 	}
-	@include celular{
+
+	@include celular {
 		width: 90%;
 	}
-	@include celularDos{
+
+	@include celularDos {
 		width: 100%;
 	}
 }
 
 
 .pie__pagina i {
-	@include celular{
+	@include celular {
 		font-size: 20px;
 	}
 }

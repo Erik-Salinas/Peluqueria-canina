@@ -1,42 +1,69 @@
-//MENU
+//*VENTANA MODAL
+.ventana-modal{
+	& h1 {
+		color: white;
+		font-size: 2.5rem;
+	}
+
+	& p {
+		color: white;
+		font-size: 1.4rem;
+	}
+	
+	& a {
+		font-size: 2rem;
+		background-color: #39BF42;
+		color: white;
+		text-decoration: none;
+		padding: 5px;
+		border-radius: 12px;
+	}
+
+	& a:hover {
+		background-color: #18db25;
+	}
+}
+//*MENU
 .menu ul li a {
 	position: relative;
 	margin: 0 15px;
 	text-decoration: none;
-	color: black;
+	color: map-get($text-colors, "black");
 	font-size: 1.3rem;
 	transition: 3.5s;
-	font-family: 'IM Fell Great Primer SC', serif;
+	font-family: $typography;
 	font-weight: 600;
-	letter-spacing: 2px; //Separacion de letras
+	letter-spacing: 2px; //todo: Separacion de letras
 }
 
 .logo {
 	position: relative;
 	text-align: center;
-	color: black;
+	color: map-get($text-colors, "black");
 	font-size: 1.6rem;
 	transition: 3.5s;
 	text-decoration: none;
-	font-family: 'IM Fell Great Primer SC', serif;
+	font-family: $typography;
 	font-weight: 600;
 	letter-spacing: 2px;
 
-	&:hover{
-		color: black;
+	&:hover {
+		color: map-get($text-colors, "black");
 	}
 }
 
-//PORTADA
+//*PORTADA
 .portada {
 	text-align: center;
-	& .portada__sub{
+
+	& .portada__sub {
 		padding: 190px;
 	}
-	& h1 {
-		color: black;
+
+	& h2 {
+		color: map-get($text-colors, "black");
 		font-size: 3rem;
-		font-family: 'IM Fell Great Primer SC', serif;
+		font-family: $typography;
 		font-weight: 600;
 		letter-spacing: 2px;
 		position: relative;
@@ -44,299 +71,328 @@
 	}
 
 	& a {
-		 color: white;
-		background-color:rgba(0, 0, 0, 0.852);
+		color: map-get($text-colors, "white");
+		background-color: map-get($background-color, "black");
 		font-size: 1.5rem;
 		text-decoration: none;
-		font-family: 'IM Fell Great Primer SC', serif;
+		font-family: $typography;
 		font-weight: 600;
-		letter-spacing: 2px; 
+		letter-spacing: 2px;
 		position: relative;
 		bottom: 150px;
 	}
-	& a:hover{
-		color: black;
-		background-color: rgba(255, 255, 255, 0.704);
+
+	& a:hover {
+		color: map-get($text-colors, "black");
+		background-color: map-get($background-color , "light-grey");
 	}
 }
 
-//SERVICIOS
-.servicios h2 {
-	color: white;
-	background-color: black;
+//*SERVICIOS
+.servicios h3 {
+	color: map-get($text-colors, "white");
+	background-color: map-get($background-color, "black");
 	text-align: center;
 	font-size: 2rem;
-	width:500px;
+	width: 500px;
 	display: block;
 	margin: auto;
 	font-family: 'IM Fell Great Primer SC', serif;
 	letter-spacing: 2px;
 }
-.servicios__info{
-	
-	& .title{
+
+.servicios__info {
+
+	& .title {
 		text-align: center;
-		color: black;
+		color: map-get($text-colors, "black");
 		font-size: 1.5rem;
-		font-family: 'IM Fell Great Primer SC', serif;
+		font-family: $typography;
 		letter-spacing: 2px;
 	}
-	& p{
+
+	& p {
 		text-align: center;
-		color: black;
+		color: map-get($text-colors, "black");
 	}
 }
 
-.turnos{
+.turnos {
 	text-align: center;
-	& a{
+
+	& a {
 		text-decoration: none;
-		background-color: #39BF42;
-		color: white;
+		background-color: map-get($background-color , "strong-green");
+		color: map-get($text-colors, "white");
 		font-size: 1.4rem;
-		font-family: 'IM Fell Great Primer SC', serif;
+		font-family: $typography;
 		letter-spacing: 2px;
 	}
-	& a:hover{
-		background-color: #18db25;
+
+	& a:hover {
+		background-color: map-get($background-color , "green");
 	}
 }
 
 
 
-//GALERIA
+//*GALERIA
 .galeria h2 {
-	color: white;
-	background-color: black;
+	color: map-get($text-colors, "white");
+	background-color: map-get($background-color, "black");
 	text-align: center;
 	font-size: 2rem;
-	width:180px;
+	width: 180px;
 	display: block;
 	margin: auto;
-	font-family: 'IM Fell Great Primer SC', serif;
+	font-family: $typography;
 	letter-spacing: 2px;
 }
 
-//PELUQUERO
-.peluquero{
-	color: white;
-	background-color: black;
+//*PELUQUERO
+.peluquero {
+	color: map-get($text-colors, "white");
+	background-color: map-get($background-color, "black");
 	text-align: center;
 	font-size: 2rem;
-	width:250px;
+	width: 250px;
 	display: block;
-	margin: auto ;
+	margin: auto;
 	margin-bottom: 150px;
-	font-family: 'IM Fell Great Primer SC', serif;
+	font-family: $typography;
 	letter-spacing: 2px;
 }
 
-  .imagen__perfil{
+.imagen__perfil {
 
-	figcaption{
-		color: black;
+	figcaption {
+		color: map-get($text-colors, "black");
 		font-size: 1rem;
-		font-family: 'IM Fell Great Primer SC', serif;
+		font-family: $typography;
 		font-weight: 400px;
 	}
 
 	.perfil__info p {
-		color: black;
+		color: map-get($text-colors, "black");
 		font-size: 1.2rem;
 		margin-top: 40px;
 		font-family: 'Archivo', sans-serif;
 		font-weight: 400;
-	} 
+	}
 
-	.perfil__info a{
-		color: black;
+	.perfil__info a {
+		color: map-get($text-colors, "black");
 		font-size: 1.2rem;
 		text-decoration: none;
-		font-family: 'Archivo', sans-serif;
+		font-family: $typography2;
 		font-weight: 400;
 	}
 
-	.perfil__info span{
-		color:rgba(0, 0, 0, 0.767);
+	.perfil__info span {
+		color: map-get($text-colors, "black");
 		font-size: 1.2rem;
 		font-weight: 600;
 		text-decoration: none;
-		font-family: 'Archivo', sans-serif;
+		font-family: $typography2;
 		font-weight: 400;
 	}
-}  
+}
 
-//CONTACTO
-.contacto h2{
-	color: white;
-	background-color: black;
+//*CONTACTO
+.contacto h2 {
+	color: map-get($text-colors, "white");
+	background-color: map-get($background-color, "black");
 	text-align: center;
 	font-size: 2rem;
-	width:250px;
+	width: 250px;
 	display: block;
-	margin: auto ;
-	font-family: 'IM Fell Great Primer SC', serif;
+	margin: auto;
+	font-family: $typography;
 	letter-spacing: 2px;
 }
 
-.contacto__info{
+.contacto__info {
 	text-align: center;
-	color: black;
+	color: map-get($text-colors, "black");
 	font-size: 1.2rem;
-	font-family: 'Archivo', sans-serif;
+	font-family: $typography2;
 	font-weight: 400;
 }
+
 .input-box .datos {
 	display: bock;
 	font-weight: 500;
-	color: black;
+	color: map-get($text-colors, "black");
 	margin-bottom: 5px;
 	font-size: 1.2rem;
-	background-color: white;
+	background-color: map-get($background-color , "white");
 	position: relative;
 	top: 12px;
 	left: 12px;
-	font-family: 'IM Fell Great Primer SC', serif;
+	font-family: $typography;
 }
 
-.consulta .datos-dos{
-	color: black;
+.consulta .datos-dos {
+	color: map-get($text-colors, "black");
 	font-size: 1.2rem;
-	background-color: white;
+	background-color: map-get($background-color , "white");
 	position: relative;
 	top: 32px;
 	left: 12px;
-	font-family: 'IM Fell Great Primer SC', serif;
+	font-family: $typography;
 }
 
-//PIE DE PAGINA
-
-.pie__pagina{
-	font-family: 'Archivo', sans-serif;
+//*PIE DE PAGINA
+.pie__pagina {
+	font-family: $typography2;
 	font-weight: 400;
-	& h4{
-		color: white;
-	font-size: 1.6rem;
-	letter-spacing: 2px;
-	text-align: center;
+
+	& h5 {
+		color: map-get($text-colors, "white");
+		font-size: 1.6rem;
+		letter-spacing: 2px;
+		text-align: center;
 	}
 
-	& a{
-		color: white;
+	& a {
+		color: map-get($text-colors, "white");
 		font-size: 1.2rem;
 		text-decoration: none;
 	}
 }
+
 .politica__derechos {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	color: white;
+	color: map-get($text-colors, "white");
 	font-size: 0.8rem;
-	font-family: 'Archivo', sans-serif;
+	font-family: $typography2;
 	font-weight: 200;
 }
 
 
-//RESPONSIVE
-.logo{
-	@include tablet{
+//!RESPONSIVE
+.logo {
+	@include tablet {
 		font-size: 1rem;
 		margin-left: -60px;
 	}
 }
+
 .menu ul li a {
-	@include tablet{
+	@include tablet {
 		font-size: 1rem;
-		
+
 	}
-	@include tabletMin{
-		color: white;
+
+	@include tabletMin {
+		color: map-get($text-colors, "white");
 		font-size: 1rem;
 	}
 }
-
-  .portada h1{
+.ventana-modal a:hover{
 	@include tablet{
+		background-color: none;
+	}
+}
+.ventana-modal h1{
+	@include celular{
+		font-size: 1.5rem;
+	}
+}
+.ventana-modal p, .ventana-modal a{
+	@include tabletMin{
+		font-size: 1.2rem;
+	}
+}
+
+.portada h2 {
+	@include tablet {
 		font-size: 2rem;
 	}
-	@include tabletMin{
+
+	@include tabletMin {
 		font-size: 1.5rem;
 		top: -300px;
 	}
-	@include celular{
+
+	@include celular {
 		font-size: 1rem;
 		display: none;
 	}
-	
-	
-} 
-.portada a{
-	@include tabletMin{
+}
+
+.portada a {
+	@include tabletMin {
 		font-size: 1.2rem;
 		top: -270px;
 	}
-	@include celular{
+
+	@include celular {
 		display: none;
 	}
-} 
+}
 
-.servicios h2{
-	@include tabletMin{
+.servicios h3 {
+	@include tabletMin {
 		font-size: 1rem;
-		width:300px;
+		width: 300px;
 	}
 }
 
-.turnos a{
-	@include tabletMin{
+.turnos a {
+	@include tabletMin {
 		font-size: 1rem;
 	}
 }
 
-.galeria h2{
-	@include tabletMin{
+.galeria h2 {
+	@include tabletMin {
 		font-size: 1rem;
-		
+
 	}
 }
-.peluquero h2{
-	@include tabletMin{
+
+.peluquero h2 {
+	@include tabletMin {
 		font-size: 1rem;
-		
+
 	}
 }
 
 .contacto h2 {
-	@include tabletMin{
+	@include tabletMin {
 		font-size: 1rem;
 	}
 }
 
-.imagen__perfil .perfil__info p{
-	@include celular{
+.imagen__perfil .perfil__info p {
+	@include celular {
 		text-align: center;
 		padding-right: 50px;
 	}
 }
 
-.imagen__perfil figcaption{
-	@include celular{
+.imagen__perfil figcaption {
+	@include celular {
 		margin-bottom: 20px;
 	}
 }
-.pie__pagina h4, .pie__pagina a {
-	@include tabletMin{
+
+.pie__pagina h4,
+.pie__pagina a {
+	@include tabletMin {
 		font-size: 1rem;
 	}
 
-	@include celular{
+	@include celular {
 		font-size: 0.8rem;
 	}
 }
 
 .politica__derechos {
-	@include celular{
+	@include celular {
 		font-size: 0.7rem;
 	}
 }
