@@ -6,6 +6,26 @@
   list-style: none;
 }
 
+.ventana-modal h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+.ventana-modal p {
+  color: white;
+  font-size: 1.4rem;
+}
+.ventana-modal a {
+  font-size: 2rem;
+  background-color: #39BF42;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 12px;
+}
+.ventana-modal a:hover {
+  background-color: #18db25;
+}
+
 .menu ul li a {
   position: relative;
   margin: 0 15px;
@@ -29,35 +49,42 @@
   font-weight: 600;
   letter-spacing: 2px;
 }
+.logo:hover {
+  color: black;
+}
 
+.portada {
+  text-align: center;
+}
 .portada .portada__sub {
   padding: 190px;
 }
-.portada h1 {
+.portada h2 {
   color: black;
   font-size: 3rem;
-  text-align: center;
-  padding: 40px;
   font-family: "IM Fell Great Primer SC", serif;
   font-weight: 600;
   letter-spacing: 2px;
+  position: relative;
+  bottom: 200px;
 }
 .portada a {
   color: white;
-  background-color: rgba(0, 0, 0, 0.852);
+  background-color: black;
   font-size: 1.5rem;
   text-decoration: none;
-  margin-left: 43%;
   font-family: "IM Fell Great Primer SC", serif;
   font-weight: 600;
   letter-spacing: 2px;
+  position: relative;
+  bottom: 150px;
 }
 .portada a:hover {
   color: black;
   background-color: rgba(255, 255, 255, 0.704);
 }
 
-.servicios h2 {
+.servicios h3 {
   color: white;
   background-color: black;
   text-align: center;
@@ -91,6 +118,9 @@
   font-size: 1.4rem;
   font-family: "IM Fell Great Primer SC", serif;
   letter-spacing: 2px;
+}
+.turnos a:hover {
+  background-color: #18db25;
 }
 
 .galeria h2 {
@@ -139,7 +169,7 @@
   font-weight: 400;
 }
 .imagen__perfil .perfil__info span {
-  color: rgba(0, 0, 0, 0.767);
+  color: black;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
@@ -194,7 +224,7 @@
   font-family: "Archivo", sans-serif;
   font-weight: 400;
 }
-.pie__pagina h4 {
+.pie__pagina h5 {
   color: white;
   font-size: 1.6rem;
   letter-spacing: 2px;
@@ -216,102 +246,134 @@
   font-weight: 200;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (max-width: 1076px) {
+  .logo {
+    font-size: 1rem;
+    margin-left: -60px;
+  }
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transition: 0.7s;
-  padding: 30px 20px;
-  z-index: 10;
+@media screen and (max-width: 1076px) {
+  .menu ul li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 865px) {
+  .menu ul li a {
+    color: white;
+    font-size: 1rem;
+  }
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 1076px) {
+  .ventana-modal a:hover {
+    background-color: none;
+  }
 }
 
-.menu ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu ul a {
-  text-decoration: none;
-}
-.menu ul .icon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: black;
-  font-size: 30px;
-  transition: 3.5s;
-  text-decoration: none;
+@media screen and (max-width: 480px) {
+  .ventana-modal h1 {
+    font-size: 1.5rem;
+  }
 }
 
-.menu-abajo {
-  background: rgba(0, 0, 0, 0.823);
-  padding: 15px 20px;
+@media screen and (max-width: 865px) {
+  .ventana-modal p, .ventana-modal a {
+    font-size: 1.2rem;
+  }
 }
 
-header.menu-abajo .logo, header.menu-abajo ul li a, header.menu-abajo ul .icon {
-  color: white;
+@media screen and (max-width: 1076px) {
+  .portada h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 865px) {
+  .portada h2 {
+    font-size: 1.5rem;
+    top: -300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portada h2 {
+    font-size: 1rem;
+    display: none;
+  }
 }
 
-.btn__envio button {
-  background-color: black;
-  color: white;
-  border: black 2px solid;
-  font-size: 20px;
-  padding: 5px;
-  float: right;
-  font-family: "IM Fell Great Primer SC", serif;
+@media screen and (max-width: 865px) {
+  .portada a {
+    font-size: 1.2rem;
+    top: -270px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portada a {
+    display: none;
+  }
 }
 
-.portada {
-  background-image: url(../../images/fondo-pantalla-2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
+@media screen and (max-width: 865px) {
+  .servicios h3 {
+    font-size: 1rem;
+    width: 300px;
+  }
 }
 
-.servicios__opcion {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+@media screen and (max-width: 865px) {
+  .turnos a {
+    font-size: 1rem;
+  }
 }
 
-.servicios__info {
-  width: 400px;
-  margin: 10px 10px;
-  margin-top: 20px;
+@media screen and (max-width: 865px) {
+  .galeria h2 {
+    font-size: 1rem;
+  }
 }
 
-.turnos a {
-  padding: 15px;
-  border-radius: 10px;
+@media screen and (max-width: 865px) {
+  .peluquero h2 {
+    font-size: 1rem;
+  }
 }
 
-a .fa-whatsapp {
-  font-size: 28px;
+@media screen and (max-width: 865px) {
+  .contacto h2 {
+    font-size: 1rem;
+  }
 }
 
-.turnos a:hover {
-  background-color: #18db25;
+@media screen and (max-width: 480px) {
+  .imagen__perfil .perfil__info p {
+    text-align: center;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagen__perfil figcaption {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .pie__pagina h4,
+.pie__pagina a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pie__pagina h4,
+.pie__pagina a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .politica__derechos {
+    font-size: 0.7rem;
+  }
 }
 
 .galeria__publicidad {
@@ -321,7 +383,6 @@ a .fa-whatsapp {
   place-content: center;
   gap: 20px;
   grid-auto-flow: dense;
-  /*Busca la manera de acomodar todo los elementos*/
 }
 
 .publicidad {
@@ -370,8 +431,366 @@ a .fa-whatsapp {
   background-image: url(../../images/peinado-gato.jpg);
 }
 
+@media screen and (max-width: 865px) {
+  .galeria__publicidad {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .publicidad {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul a {
+  text-decoration: none;
+}
+.menu ul .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 30px;
+  transition: 3.5s;
+  text-decoration: none;
+}
+
+.menu-abajo {
+  background-color: rgba(0, 0, 0, 0.823);
+  padding: 15px 20px;
+}
+
+header.menu-abajo .logo,
+header.menu-abajo ul li a,
+header.menu-abajo ul .icon,
+header.menu-abajo label .fa-bars {
+  color: white;
+}
+
+.fa-bars {
+  font-size: 40px;
+}
+
+.fa-bars,
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 865px) {
+  header {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  header .chekbtn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  header .fa-bars {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: black;
+    transition: 3.5s;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  header .menu ul {
+    display: block;
+    position: fixed;
+    top: 78px;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.971);
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  header .menu ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+/* .menu ul li:last-child{ //Averiguar que hace el :last-child 
+        background: none;
+        padding: 1rem;
+} */
+@media screen and (max-width: 865px) {
+  header #check:checked ~ ul {
+    left: 0;
+    transition: all 0.25s;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .menu-abajo {
+    background-color: rgba(0, 0, 0, 0.971);
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .menu a .icon {
+    color: white;
+    margin: 20px;
+  }
+}
+
+footer {
+  background-color: black;
+}
+
+.pie__pagina {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 70px);
+  align-items: center;
+  justify-content: space-evenly;
+  grid-auto-flow: dense;
+}
+
+.pie__pagina i {
+  font-size: 30px;
+  margin: 7px;
+  position: relative;
+  top: 5px;
+}
+
+.pie__pagina .icon:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.pie__pagina .icon:nth-child(5) {
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+
+@media screen and (max-width: 1076px) {
+  .pie__pagina {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 13px;
+  }
+}
+@media screen and (max-width: 865px) {
+  .pie__pagina {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pie__pagina {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pie__pagina {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(4) {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie__pagina .icon:nth-child(5) {
+    grid-row-start: 3;
+    grid-column-start: 3;
+  }
+}
+
+.ventana-modal .boton {
+  background: linear-gradient(#FFFFFF, #555555);
+  border: none;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 15px 100px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.ventana-modal .boton:hover {
+  background: linear-gradient(#FFFFFF, #666666);
+}
+
+.btn__envio button {
+  background-color: black;
+  color: white;
+  border: black 2px solid;
+  font-size: 1.2rem;
+  padding: 5px;
+  float: right;
+  font-family: "IM Fell Great Primer SC", serif;
+}
+
+@media screen and (max-width: 865px) {
+  .ventana-modal .boton {
+    font-size: 1.2rem;
+    padding: 15px 70px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ventana-modal .boton {
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn__envio button {
+    font-size: 1rem;
+  }
+}
+
+.ventana-modal {
+  margin: 20px auto;
+  background: linear-gradient(#000000, #5A5A5A);
+  padding: 20px;
+  width: 450px;
+  line-height: 150%;
+  border-radius: 3%;
+  z-index: 100;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.9s ease-in all;
+  font-family: "IM Fell Great Primer SC", serif;
+}
+.ventana-modal img {
+  width: 150px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+.ventana-modal .activo {
+  display: block;
+  /* Se muestra aviso */
+}
+
+.fondo-modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9176470588);
+  height: 100vh;
+  z-index: 99;
+  padding-top: 100px;
+  position: fixed;
+  /* *Fijamos fondo */
+  z-index: 99;
+  /* *Colocacion detras del bloque cookies */
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.fondo-modal.activo {
+  display: block;
+}
+
+.portada {
+  background-image: url(../../images/fondo-pantalla-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.servicios__opcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servicios__info {
+  width: 400px;
+  margin: 10px 10px;
+  margin-top: 20px;
+}
+
+.turnos a {
+  padding: 15px;
+  border-radius: 10px;
+}
+
 .imagen__perfil {
-  margin-left: 220px;
+  margin-left: 20%;
   margin-top: 70px;
 }
 
@@ -381,7 +800,7 @@ a .fa-whatsapp {
   margin-top: -60px;
 }
 .perfil__peluquero img {
-  width: 300px;
+  max-width: 300px;
 }
 
 .perfil__info {
@@ -413,7 +832,6 @@ a .fa-whatsapp {
   width: 100%;
   border: black 1px solid;
   outline: none;
-  /*Anula el borde  que aprece al selecionar una caja*/
   font-size: 1.2rem;
   border-radius: 5px;
   border: 1px solid black;
@@ -432,34 +850,102 @@ a .fa-whatsapp {
   padding: 10px 20px;
 }
 
-footer {
-  background-color: black;
+.foto__mascota span {
+  color: black;
+  font-size: 1.2rem;
+  font-family: "IM Fell Great Primer SC", serif;
 }
 
-.pie__pagina {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 70px);
-  align-items: center;
-  justify-content: space-evenly;
+.foto__mascota input {
+  display: block;
+  margin: auto;
 }
 
-.pie__pagina i {
-  font-size: 30px;
-  margin: 7px;
-  position: relative;
-  top: 5px;
+@media screen and (max-width: 1076px) {
+  .ventana-modal img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ventana-modal img {
+    width: 110px;
+  }
 }
 
-.pie__pagina .icon:nth-child(4) {
-  grid-row-start: 2;
-  grid-column-start: 2;
+@media screen and (max-width: 865px) {
+  .ventana-modal {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ventana-modal {
+    width: 300px;
+  }
 }
 
-.pie__pagina .icon:nth-child(5) {
-  grid-row-start: 2;
-  grid-column-start: 3;
+@media screen and (max-width: 1076px) {
+  .portada {
+    background-size: 100% 100%;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 865px) {
+  .portada {
+    background-size: 100% 100%;
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portada {
+    background-size: 100% 100%;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .portada__sub {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .perfil__peluquero {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .perfil__peluquero {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .perfil__peluquero img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .formulario__contacto .input-box {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .formulario__contacto .input-box {
+    width: calc(100% - 0px);
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .formulario__contacto .input-box input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .consulta textarea {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

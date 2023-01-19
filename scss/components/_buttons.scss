@@ -1,10 +1,47 @@
-//CONTACTO
-.btn__envio button{
+//*VENTAANA MODAL
+.ventana-modal{
+	& .boton {
+		background: linear-gradient(#FFFFFF, #555555);
+		border: none;
+		color: rgba(0, 0, 0, 0.9);
+		text-align: center;
+		padding: 15px 100px;
+		margin-top: 20px;
+		font-size: 1.4rem;
+		font-weight: 700;
+		cursor: pointer;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+
+	& .boton:hover {
+		background: linear-gradient(#FFFFFF, #666666);
+
+	}
+}
+//*CONTACTO
+ .btn__envio button{
 	background-color: black;
 	color: white;
 	border: black 2px solid;
-	font-size: 20px;
+	font-size: 1.2rem;
 	padding: 5px;
 	float: right;
 	font-family: 'IM Fell Great Primer SC', serif;
+} 
+
+//!RESPONSIVE
+.ventana-modal .boton{
+	@include tabletMin{
+		font-size: 1.2rem;
+		padding: 15px 70px;
+	}
+	@include celularDos{
+		padding: 10px 50px;
+	}
+}
+.btn__envio button{
+	@include celular{
+		font-size: 1rem;
+	}
 }
