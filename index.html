@@ -23,11 +23,24 @@
 	<link rel="stylesheet" href="css/styles.css" />
 	<script defer src="javascript/script.js"></script>
 	<script defer src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRLFDT2Z87"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-TRLFDT2Z87');
+	</script>
+
 	<title>Peluqueria salinas | mascotas |Argentina </title>
 	<link rel="icon" href="images/logo.png" />
-	<meta name="descripcion" content="Peluqueria salinas cuenta con los mejores servicios que podes encontrar en ciudad autonoma de buenos aires para tu mascota. Nos encontramos en Recoleta, french3700" />
+	<meta name="descripcion"
+		content="Peluqueria salinas cuenta con los mejores servicios que podes encontrar en ciudad autonoma de buenos aires para tu mascota. Nos encontramos en Recoleta, french3700" />
 	<meta name="author" content="Erik salinas" />
 	<meta name="keywords" content="peluqueria,servicios,mascotas" />
+
 </head>
 
 <body>
@@ -202,36 +215,37 @@
 		<section class="container">
 			<div class="formulario">
 				<form action="https://formsubmit.co/erik61869@gmail.com" method="POST">
-				<div class="formulario__contacto">
-					<div class="input-box">
-						<span class="datos" for="nombreApellido">Nombre y Apellido</span>
-						<input type="text" id="nombreApellido" name="nombreApellido" required />
+					<div class="formulario__contacto">
+						<div class="input-box">
+							<span class="datos" for="nombreApellido">Nombre y Apellido</span>
+							<input type="text" id="nombreApellido" name="nombreApellido" required />
+						</div>
+						<div class="input-box">
+							<span class="datos" for="dirrecion">Dirección</span>
+							<input type="text" id="dirrecion" name="dirrecion" required />
+						</div>
+						<div class="input-box">
+							<span class="datos" for="telefono">Telefono</span>
+							<input type="tel" id="telefono" name="telefono" placeholder="1160838693" required />
+						</div>
+						<div class="input-box">
+							<span class="datos" for="correo">Email</span>
+							<input type="email" id="correo" name="correo" placeholder="peluqueria-208@gmail.com"
+								required />
+						</div>
 					</div>
-					<div class="input-box">
-						<span class="datos" for="dirrecion">Dirección</span>
-						<input type="text" id="dirrecion" name="dirrecion" required />
+					<div class="consulta">
+						<span class="datos-dos" for="consulta">Consulta</span>
+						<textarea name="consulta" id="consulta" placeholder="Escribe aqui"></textarea>
 					</div>
-					<div class="input-box">
-						<span class="datos" for="telefono">Telefono</span>
-						<input type="tel" id="telefono" name="telefono" placeholder="1160838693" required />
+					<div> <!-- todo: Nos permite volver a la pagina web -->
+						<input type="hidden" name="_next" value="https://peluqueria-canina-erik.netlify.app/">
+						<input type="hidden" name="_captcha" value="false">
 					</div>
-					<div class="input-box">
-						<span class="datos" for="correo">Email</span>
-						<input type="email" id="correo" name="correo" placeholder="peluqueria-208@gmail.com" required />
+					<div class="btn__envio">
+						<button type="submit" id="btnEnviar" name="btnEnviar" value="enviar" class="mt-3 mb-5">
+							ENVIAR</button>
 					</div>
-				</div>
-				<div class="consulta">
-					<span class="datos-dos" for="consulta">Consulta</span>
-					<textarea name="consulta" id="consulta" placeholder="Escribe aqui"></textarea>
-				</div>
-				<div> <!-- todo: Nos permite volver a la pagina web -->
-					<input type="hidden" name="_next" value="https://peluqueria-canina-erik.netlify.app/">
-					<input type="hidden" name="_captcha" value="false">
-				</div>
-				<div class="btn__envio">
-					<button type="submit" id="btnEnviar" name="btnEnviar" value="enviar"
-						class="mt-3 mb-5"> ENVIAR</button>
-				</div>
 				</form>
 			</div>
 		</section>
