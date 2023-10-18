@@ -69,8 +69,9 @@
   bottom: 200px;
 }
 .portada a {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
+  transition: 2s;
   font-size: 1.5rem;
   text-decoration: none;
   font-family: "IM Fell Great Primer SC", serif;
@@ -115,6 +116,7 @@
   text-decoration: none;
   background-color: #39BF42;
   color: white;
+  transition: 1s;
   font-size: 1.4rem;
   font-family: "IM Fell Great Primer SC", serif;
   letter-spacing: 2px;
@@ -359,13 +361,13 @@
 
 @media screen and (max-width: 865px) {
   .pie__pagina h4,
-.pie__pagina a {
+  .pie__pagina a {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
   .pie__pagina h4,
-.pie__pagina a {
+  .pie__pagina a {
     font-size: 0.8rem;
   }
 }
@@ -392,43 +394,43 @@
 }
 
 .publicidad:nth-child(1) {
-  background-image: url(../images/baño-golden.jpg);
+  background-image: url(../images/img-1.jpg);
 }
 
 .publicidad:nth-child(2) {
-  background-image: url(../images/corte-de-lagrimales.jpg);
+  background-image: url(../images/img-2.jpg);
 }
 
 .publicidad:nth-child(3) {
-  background-image: url(../images/corte-caniche.jpg);
+  background-image: url(../images/img-3.jpg);
   grid-column: 3;
   grid-row: 1/3;
 }
 
 .publicidad:nth-child(4) {
-  background-image: url(../images/corte-de-uñas-maltes.jpg);
+  background-image: url(../images/img-4.jpg);
 }
 
 .publicidad:nth-child(5) {
-  background-image: url(../images/peinado-gato2.jpg);
+  background-image: url(../images/img-5.jpg);
 }
 
 .publicidad:nth-child(6) {
-  background-image: url(../images/panoramica-peluqueria.jpg);
+  background-image: url(../images/img-6.jpg);
   grid-column: 2/4;
 }
 
 .publicidad:nth-child(7) {
-  background-image: url(../images/secado-de-pup.jpg);
+  background-image: url(../images/img-8.jpg);
   grid-row: 3/5;
 }
 
 .publicidad:nth-child(8) {
-  background-image: url(../images/secado-perro-comun.jpg);
+  background-image: url(../images/img-7.jpg);
 }
 
 .publicidad:nth-child(9) {
-  background-image: url(../images/peinado-gato.jpg);
+  background-image: url(../images/img-9.jpg);
 }
 
 @media screen and (max-width: 865px) {
@@ -763,7 +765,7 @@ footer {
 }
 
 .portada {
-  background-image: url(../images/fondo-pantalla-2.jpg);
+  background-image: url(../images/pexels-simona-kidrič-2607544.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
