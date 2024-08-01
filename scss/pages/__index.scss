@@ -11,9 +11,7 @@
 	transform: scale(1);
 	transition: .90s ease-in all;
 	font-family: $typography;
-
 	
-
 	& img {
 		width: 150px;
 		border-radius: 100%;
@@ -84,7 +82,7 @@
 //*PELUQUERO
 .imagen__perfil {
 	margin-left: 20%;
-	margin-top: 70px;
+	margin-top: 6rem;
 }
 
 .perfil__peluquero {
@@ -98,13 +96,9 @@
 }
 
 .perfil__info {
-	margin-bottom: 300px;
+	margin-bottom: 13rem;
 }
 
-//*CONTACTO
-.container {
-	width: 100%;
-}
 
 .formulario {
 	display: flex;
@@ -160,6 +154,7 @@
 
 
 
+
 //!RESPONSIVE
 .ventana-modal img{
 	@include tablet{
@@ -177,6 +172,8 @@
 		width:300px ;
 	}
 }
+
+  
 .portada {
 	@include tablet {
 		background-size: 100% 100%;
@@ -199,7 +196,11 @@
 		display: none;
 	}
 }
-
+.servicios__info {
+	@include tablet{
+		width: auto;
+	}
+}
 
 .perfil__peluquero {
 	@include tablet {
@@ -216,7 +217,20 @@
 		max-width: 80%;
 	}
 }
-
+.perfil__info {
+	@include celular{
+		margin-bottom: 3rem;
+	}
+	@include tablet{
+		margin-bottom: 3rem;
+	}
+}
+.imagen__perfil {
+	
+	@include celular{
+		margin-top: 2rem;
+	}
+}
 
 .formulario__contacto .input-box {
 	@include tabletMin {

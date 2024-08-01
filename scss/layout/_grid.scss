@@ -56,16 +56,16 @@
 
 //!RESPONSIVE
 .galeria__publicidad {
-	@include tabletMin {
+	@include celular {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 10px;
 	}
 }
 
 .publicidad {
-	@include tabletMin {
-		width: 200px;
-		height: 200px;
+	@include celular {
+		width: 6rem;
+		height: 20vh;
 	}
-
 }
