@@ -15,57 +15,57 @@
 }
 
 .publicidad:nth-child(1) {
-	background-image: url(../images/img-1.jpg);
+	background-image: url(../images/baño-golden.jpg);
 }
 
 .publicidad:nth-child(2) {
-	background-image: url(../images/img-2.jpg);
+	background-image: url(../images/corte-de-lagrimales.jpg);
 }
 
 .publicidad:nth-child(3) {
-	background-image: url(../images/img-3.jpg);
+	background-image: url(../images/corte-caniche.jpg);
 	grid-column: 3;
 	grid-row: 1/3;
 }
 
 .publicidad:nth-child(4) {
-	background-image: url(../images/img-4.jpg);
+	background-image: url(../images/corte-de-uñas-maltes.jpg);
 }
 
 .publicidad:nth-child(5) {
-	background-image: url(../images/img-5.jpg);
+	background-image: url(../images/peinado-gato2.jpg);
 }
 
 .publicidad:nth-child(6) {
-	background-image: url(../images/img-6.jpg);
+	background-image: url(../images/panoramica-peluqueria.jpg);
 	grid-column: 2/4;
 }
 
 .publicidad:nth-child(7) {
-	background-image: url(../images/img-8.jpg);
+	background-image: url(../images/secado-de-pup.jpg);
 	grid-row: 3/5;
 }
 
 .publicidad:nth-child(8) {
-	background-image: url(../images/img-7.jpg);
+	background-image: url(../images/secado-perro-comun.jpg);
 }
 
 .publicidad:nth-child(9) {
-	background-image: url(../images/img-9.jpg);
+	background-image: url(../images/peinado-gato.jpg);
 }
 
 //!RESPONSIVE
 .galeria__publicidad {
-	@include tabletMin {
+	@include celular {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 10px;
 	}
 }
 
 .publicidad {
-	@include tabletMin {
-		width: 200px;
-		height: 200px;
+	@include celular {
+		width: 6rem;
+		height: 20vh;
 	}
-
 }

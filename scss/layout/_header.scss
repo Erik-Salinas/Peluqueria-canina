@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 header {
     position: fixed; //TODO: Tiene que estar esta función (position:fixed) para usar z-index
@@ -12,15 +7,9 @@ header {
     display: flex;
     justify-content: space-between;
     transition: 0.7s;
-    padding: 30px 20px;
-    z-index: 10; // TODO: Es para elegir la posición de los elemeno (delante o  detras podemos uner z-index:1;(Por defecto),z-index:2;, normalmente usamos para arriba z-index:10; )
-
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0.5rem 0;
+    z-index: 10; // TODO: Es para elegir la posición de los elemeno (delante o  detras podemos uner z-index:1;(Por defecto),z-index:2;, normalmente usamos para arriba z-index:10; ) 
+    
 }
 
 .menu ul {
@@ -33,20 +22,11 @@ header {
         text-decoration: none;
     }
 
-    & .icon {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        color: map-get($text-colors , "black" );
-        font-size: 30px;
-        transition: 3.5s;
-        text-decoration: none;
-    }
 }
 
 
 .menu-abajo {
-    background-color: map-get($background-color , "light.black2" );
+    background-color: map-get($background-color , "light.black2");
     padding: 15px 20px;
 }
 
@@ -54,7 +34,7 @@ header.menu-abajo .logo,
 header.menu-abajo ul li a,
 header.menu-abajo ul .icon,
 header.menu-abajo label .fa-bars {
-    color: map-get($text-colors, "white" );
+    color: map-get($text-colors, "white");
 }
 
 //*MENU
@@ -68,6 +48,13 @@ header.menu-abajo label .fa-bars {
 }
 
 //!RESPONSIVE
+
+header {
+    @include celular {
+        background-color: transparent;
+    }
+
+}
 
 header {
     @include tabletMin {
@@ -87,7 +74,7 @@ header .fa-bars {
         position: fixed;
         top: 20px;
         right: 20px;
-        color: map-get($text-colors , "black" );
+        color: map-get($text-colors , "black");
         transition: 3.5s;
     }
 }
@@ -96,15 +83,14 @@ header .menu ul {
     @include tabletMin {
         display: block;
         position: fixed;
-        top: 78px; 
+        top: 78px;
         left: -100%;
-        background-color:map-get($background-color , "light-black");
+        background-color: map-get($background-color , "light-black");
         width: 100%;
         height: 100vh;
         right: 0; //TODO: alineacion a la derecha
     }
 }
-
 header .menu ul li {
     @include tabletMin {
         padding: 2rem;
@@ -113,26 +99,33 @@ header .menu ul li {
         margin: 0;
     }
 }
-
-/* .menu ul li:last-child{ //Averiguar que hace el :last-child 
-        background: none;
-        padding: 1rem;
-} */
 header #check:checked~ul {
-    @include tabletMin {//TODO: ~ seleciona a todo los elementos
+    @include tabletMin {
+        //TODO: ~ seleciona a todo los elementos
         left: 0;
         transition: all .25s;
     }
 }
-
 .menu-abajo {
     @include tabletMin {
-        background-color:map-get($background-color , "light-black");
+        background-color: map-get($background-color , "light-black");
     }
 }
-.menu a .icon{
-    @include tabletMin{
-    color: map-get($text-colors, "white" );
-    margin: 20px;
+.menu a .icon {
+    @include tabletMin {
+        color: map-get($text-colors, "white");
+        margin: 20px;
     }
+}
+.menu-abierto .menu ul {
+    @include celular {
+        left: 0;
+    }
+}
+.menu-abierto {
+    @include celular {
+        /* Estilos adicionales para cuando el menú está abierto */
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
 }
